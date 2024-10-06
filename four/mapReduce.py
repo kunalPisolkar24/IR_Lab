@@ -1,9 +1,7 @@
 from collections import defaultdict
 
 # Mapper function
-def mapper(line):
-    line = line.lower()
-    
+def mapper(line): 
     for char in line:
         if char.isalpha():
             yield (char, 1)
